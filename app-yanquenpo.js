@@ -90,13 +90,13 @@ const startRandomComputerChoice = () => {
 
 		// Change the computer choice based on the random number generated
 		if (randomOption === 1) {
-			computerChoice.src = 'img/assets/rock.png';
+			computerChoice.src = './assets/rock.png';
 			game.computerChoice = 'rock';
 		} else if (randomOption === 2) {
-			computerChoice.src = 'img/assets/paper.png';
+			computerChoice.src = './assets/paper.png';
 			game.computerChoice = 'paper';
 		} else if (randomOption === 3) {
-			computerChoice.src = 'img/assets/scissors.png';
+			computerChoice.src = './assets/scissors.png';
 			game.computerChoice = 'scissors';
 		}
 
@@ -145,7 +145,7 @@ const optionClickHandler = event => {
 
 	event.target.classList.add('selected');
 
-	playerChoice.src = `img/assets/${option}.png`;
+	playerChoice.src = `./assets/${option}.png`;
 	game.playerChoice = option;
 };
 
